@@ -1,0 +1,156 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  width: 40vw;
+  height: 60vh;
+  background-color: white;
+}
+.popup-header {
+  height: 60px;
+  background-color: rgb(201, 192, 192);
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 35px;
+  right: 26px;
+  color: black;
+  background-color: white;
+}
+.popup-heading {
+  padding-top: 18px;
+  text-align: center;
+}
+.input-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.select-box {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: rgb(201, 192, 192);
+}
+.get-img-btn {
+  border: none;
+  width: 100px;
+  height: 25px;
+  color: white;
+  margin-bottom: 30px;
+  background-color: rgb(32, 110, 32);
+}
+.img-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.imgdiv {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(197, 195, 195);
+  margin: 15px;
+}
+.popimg {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-inner {
+    position: relative;
+    width: 70vw;
+    height: 50vh;
+    background-color: white;
+  }
+  .popup-header {
+    height: 60px;
+    background-color: rgb(201, 192, 192);
+  }
+
+  .popup-inner .close-btn {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: black;
+    background-color: white;
+  }
+  .popup-heading {
+    padding-top: 18px;
+    text-align: center;
+  }
+  .input-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .select-box {
+    margin: 5px;
+    width: 100px;
+    height: 20px;
+    border: none;
+    background-color: rgb(201, 192, 192);
+  }
+  .get-img-btn {
+    border: none;
+    width: 80px;
+    height: 20px;
+    color: white;
+    margin-bottom: 20px;
+    background-color: rgb(32, 110, 32);
+  }
+  .img-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .imgdiv {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(197, 195, 195);
+    margin: 15px;
+  }
+  .popimg {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,25 @@
+.imgcontainer {
+  height: 120px;
+  width: 120px;
+  background-color: rgb(197, 195, 195);
+}
+
+img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .imgcontainer {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(197, 195, 195);
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+}

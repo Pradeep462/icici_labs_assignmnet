@@ -1,0 +1,25 @@
+.itemContainer {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.items {
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .itemContainer {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

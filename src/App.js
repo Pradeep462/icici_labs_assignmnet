@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React , {useState} from 'react';
+import Header from "./Component/Header.js";
+import SearchByBreed from './Component/SearchByBreed.js';
+import Content from './Component/Content.js';
+import Popup from './Component/Popup.js';
 
 function App() {
+  const [popupcard , setPopupcard] = useState(false);
+  const [dogsData , setDogsData] = useState([]);
+  const [searchbreed , setSearchbreed] = useState('');
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Header setPopupcard={setPopupcard}/>
+      <Popup popupcard={popupcard} setPopupcard={setPopupcard} dogsData={dogsData}>
+                  
+             </Popup>
+      <SearchByBreed setSearchbreed={setSearchbreed}/>  
+      <Content dogsData={dogsData} setDogsData={setDogsData}  searchbreed={searchbreed} />
+        
     </div>
   );
 }
