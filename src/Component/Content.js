@@ -15,15 +15,11 @@ const Content = ({dogsData , setDogsData , searchbreed}) => {
         setDogsData(dogsdatajson["message"]);
     }
 
-    
-
     useEffect(()=>{
         getdogsdata();
         
     },[]);
-
-    
-    const clickHandler = (dog) => {
+       const clickHandler = (dog) => {
       
         setPopupbreedtoggle(true);
         setClickedBreed(()=> dog);

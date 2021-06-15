@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import './SearchByBreed.css';
 
 const SearchByBreed = (props) => {

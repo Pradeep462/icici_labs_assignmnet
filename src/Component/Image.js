@@ -17,7 +17,7 @@ const Image = ({breed}) => {
     },[])
 
     return (
-             <div className="imgcontainer">
+             <div  className="imgcontainer">
                  <img src={image} alt="image loding"/>
              </div>
     );
